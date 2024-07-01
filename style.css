@@ -89,6 +89,12 @@ a {
     margin-right: 0;
     margin-left: 0;
   }
+  #contact,
+  #profile,
+  #about {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 /* toogle */
@@ -131,5 +137,11 @@ a {
   .btn-profile button {
     font-size: 14px;
     font-weight: 800;
+  }
+  #contact,
+  #profile,
+  #about {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
