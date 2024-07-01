@@ -13,9 +13,76 @@
   </head>
   <body>
     <header class="shadow-sm position-fixed z-3 top-0 w-100">
-      <nav class="navbar container-md navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md py-3 bg-body-tertiary">
+        <div class="container">
+          <!-- logo -->
+          <a class="navbar-brand m-0 p-0 fw-bold fs-3" href="#">FarhanAlktr</a>
+          <!-- toogler -->
           <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- sidebtn -->
+          <div
+            class="sidebtn offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!-- sidebtn header -->
+            <div class="offcanvas-header border-bottom">
+              <h5
+                class="offcanvas-title ps-2 fs-4 fw-semibold"
+                id="offcanvasNavbarLabel"
+              >
+                FarhanAlktr
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- sidebtn body -->
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav fs-5 justify-content-md-end align-items-center flex-grow-1"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link fw-semibold active"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Project</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -27,11 +94,12 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse d-flex justify-content-md-between align-items-center navbar-collapse"
+            class="collapse navbar-collapse collapse-start"
             id="navbarTogglerDemo01"
           >
-            <a class="navbar-brand fw-bold fs-3" href="#">FarhanAlktr</a>
-            <ul class="navbar-nav d-flex gap-3 text-primary">
+            <ul
+              class="navbar-nav w-100 justify-content-center justify-content-md-end d-flex gap-3 text-primary"
+            >
               <li class="nav-item">
                 <a
                   target="_self"
@@ -63,7 +131,7 @@
                 >
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </nav>
     </header>
@@ -98,10 +166,10 @@
         </li>
       </ul>
     </aside>
-    <main class="container-md my-5">
+    <main class="container my-5">
       <!-- profile -->
       <section id="profile" class="profile row mx-5">
-        <div class="col-7 d-flex justify-content-center flex-column">
+        <div class="col-7 text-hero d-flex justify-content-center flex-column">
           <p class="fs-4">
             Hello, I'm <span class="fs-3 fw-semibold">Farhan,</span> <br />
             I'm a fresh graduate who is studying the field of website
@@ -126,7 +194,7 @@
           </div>
         </div>
         <div class="col-5 d-flex justify-content-center">
-          <div>
+          <div class="cobagambar">
             <img
               width="300"
               class="rounded-1"
