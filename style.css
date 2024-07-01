@@ -1,6 +1,15 @@
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
+
+#contact,
+#profile,
+#about {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
 a {
   text-decoration: none;
 }
@@ -31,9 +40,9 @@ section {
   margin-top: 150px;
 }
 
-#contact {
-  margin-right: 150px;
-  margin-left: 150px;
+.contact-container {
+  margin-right: 75px;
+  margin-left: 75px;
 }
 .cardTop {
   min-height: 400px;
@@ -76,14 +85,20 @@ a {
   font-size: 1.15rem;
 }
 @media (max-width: 990px) {
-  #contact {
-    margin-right: 100px;
-    margin-left: 100px;
+  .contact-container {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
 /* toogle */
 @media (max-width: 768px) {
+  #contact {
+    margin: 0;
+  }
+  #project {
+    margin: 0;
+  }
   .sidebtn {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(30px);
@@ -94,7 +109,7 @@ a {
   .text-hero p {
     font-size: 10px;
   }
-  #contact {
+  .contact-container {
     margin: 75px 20px 0 20px;
   }
   #contact p {
