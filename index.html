@@ -135,7 +135,7 @@
         </div>
       </nav>
     </header>
-    <aside class="sidebar position-fixed">
+    <aside class="sidebar d-none d-md-flex z-3 position-fixed">
       <ul class="d-flex flex-column gap-4">
         <li>
           <a href="https://www.instagram.com/farhanbsyr/"
@@ -168,32 +168,39 @@
     </aside>
     <main class="container my-5">
       <!-- profile -->
-      <section id="profile" class="profile row mx-5">
-        <div class="col-7 text-hero d-flex justify-content-center flex-column">
+      <section
+        id="profile"
+        class="profile cobanih row d-flex flex-md-row flex-column-reverse mx-md-5 mx-1 gap-md-0 gap-4"
+      >
+        <div
+          class="col-md-7 text-hero text-center text-md-start d-flex justify-content-center align-items-md-start align-items-center flex-column"
+        >
           <p class="fs-4">
             Hello, I'm <span class="fs-3 fw-semibold">Farhan,</span> <br />
             I'm a fresh graduate who is studying the field of website
             development, especially the
             <span class="fs-4 fw-semibold">Frontend Developer</span>
           </p>
-          <div class="btn-profile d-flex gap-3">
-            <a href="./assets/CV Farhan.pdf" target="_blank" class="w-50 h-100"
+          <div
+            class="btn-profile d-flex justify-content-center justify-content-md-start gap-3"
+          >
+            <a href="./assets/CV Farhan.pdf" target="_blank"
               ><button
-                class="btn w-100 fs-6 fw-semibold h-100 rounded-5 btn-sm btn-dark"
+                class="btn w-100 fw-semibold h-100 rounded-5 btn-md btn-dark"
               >
                 Download CV
               </button></a
             >
-            <a href="#contact" target="_self" class="w-50 h-100">
+            <a href="#contact" target="_self">
               <button
-                class="btn-contacts fs-6 fw-semibold w-100 h-100 rounded-5"
+                class="btn-contacts btn-md fw-semibold w-100 h-100 rounded-5"
               >
                 Contact Me
               </button>
             </a>
           </div>
         </div>
-        <div class="col-5 d-flex justify-content-center">
+        <div class="col-md-5 d-flex justify-content-center">
           <div class="cobagambar">
             <img
               width="300"
@@ -206,7 +213,7 @@
       </section>
 
       <!-- about me -->
-      <section id="about" class="about mx-5">
+      <section id="about" class="about mx-md-5 mx-1">
         <div class="text-center fs-5">
           <h1 class="fw-semibold mb-5">About Me</h1>
           <p>
@@ -457,7 +464,7 @@
       <section id="contact">
         <div class="text-center mb-5">
           <h1 class="fw-semibold mb-3">Contact</h1>
-          <p class="fs-5">
+          <p>
             Apart from that, I am currently open to opportunities to work or
             intern at your company. If you have an interesting project or need
             extra help, don't hesitate to contact me.
@@ -498,7 +505,7 @@
             <div class="form-btn">
               <button
                 type="submit"
-                class="btn fs-5 w-25 fw-semibold h-100 rounded-5 btn-dark"
+                class="btn fw-semibold h-100 rounded-5 btn-dark"
               >
                 Submits
               </button>
@@ -508,7 +515,7 @@
       </section>
     </main>
     <footer id="footer" class="text-black">
-      <div class="mx-5 row container-md pt-4 pb-2">
+      <div class="mx-md-5 mx-1 row container-md pt-4 pb-2">
         <div class="col">
           <h1 class="fs-2 fw-semibold">Farhan</h1>
         </div>

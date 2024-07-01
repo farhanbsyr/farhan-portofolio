@@ -63,6 +63,25 @@ a {
   color: black;
 }
 
+#contact p {
+  font-size: 1.25rem;
+}
+
+.btn-profile a {
+  width: 175px;
+  height: 60px;
+}
+#contact button {
+  width: 175px;
+  font-size: 1.15rem;
+}
+@media (max-width: 990px) {
+  #contact {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+
 /* toogle */
 @media (max-width: 768px) {
   .sidebtn {
@@ -70,9 +89,32 @@ a {
     backdrop-filter: blur(30px);
   }
   .cobagambar img {
-    width: 200px;
+    width: 250px;
   }
   .text-hero p {
     font-size: 10px;
+  }
+  #contact {
+    margin: 75px 20px 0 20px;
+  }
+  #contact p {
+    font-size: 20px;
+  }
+  #contact button {
+    width: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn-profile a {
+    width: 125px;
+    height: 60px;
+  }
+  #contact p {
+    font-size: 15px;
+  }
+  .btn-profile button {
+    font-size: 14px;
+    font-weight: 800;
   }
 }
